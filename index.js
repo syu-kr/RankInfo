@@ -5,6 +5,8 @@ const fs = require("fs")
 
 app.use(bodyParser.json())
 
+app.use("/", express.static(__dirname + "/public"))
+
 app.get("/", (req, res) => {
   res.status(200).sendFile(__dirname + "/index.html")
 })
