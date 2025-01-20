@@ -19,7 +19,8 @@ app.get("/student", async (req, res) => {
     await fetch("https://suwings.syu.ac.kr/websquare/engine/proworks/callServletService.jsp", {
       method: "POST",
       headers: {
-        "content-type": "text/xml; charset=utf-8",
+        Cookie:
+          "JSESSIONID_intranet=BrTjlLr3pnIeKCvT0hOhJV6CWstMeStdrBalazrI8FmNeLtzvDDxjkI0zrnoaVVQ.d2FzX3NlcnZsZXRfZW5naW5lMg==",
       },
       body: student,
     })
@@ -41,7 +42,8 @@ app.get("/rank", async (req, res) => {
     await fetch("https://suwings.syu.ac.kr/websquare/engine/proworks/callServletService.jsp", {
       method: "POST",
       headers: {
-        "content-type": "text/xml; charset=utf-8",
+        Cookie:
+          "JSESSIONID_intranet=BrTjlLr3pnIeKCvT0hOhJV6CWstMeStdrBalazrI8FmNeLtzvDDxjkI0zrnoaVVQ.d2FzX3NlcnZsZXRfZW5naW5lMg==",
       },
       body: rank,
     })
